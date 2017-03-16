@@ -44,15 +44,7 @@ $("#browser_geo" ).one('click', function(){
 });
 	   
 function getLocation() {
-    if (navigator.geolocation) {
-	    navigator.geolocation.getCurrentPosition(showPosition, function(error) {
-	    	$('#browser_geo').text('use my location');	
-      		getWeather("./weather.php");
-	    });
-	}
-	else {
-		$("#browser_geo").text("Geolocation is not supported by this browser.");
-	}
+      		getWeather("http://api.openweathermap.org/data/2.5/weather?q=Sviyazhsk,ru&appid=13866aba2470736250be0ec3bb389ae7");
 }
 
 function showPosition(position) {
