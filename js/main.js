@@ -39,10 +39,6 @@ function getWeather(link) {
 	});
 }
 
-$("#browser_geo" ).one('click', function(){
-   	getLocation();
-});
-	   
 function getLocation() {
       		getWeather("http://api.openweathermap.org/data/2.5/weather?q=Sviyazhsk,ru&appid=13866aba2470736250be0ec3bb389ae7");
 }
@@ -52,5 +48,4 @@ function showPosition(position) {
     url += '?lat=' + position.coords.latitude + '&lon=' + position.coords.longitude + '&callback=?';
 
     getWeather(url);
-    $("#browser_geo").text("wow, located!").css("cursor", "auto").css("color", "#FF5CFF");
 }
