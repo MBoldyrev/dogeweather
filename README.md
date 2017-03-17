@@ -1,9 +1,7 @@
 dogeweather
 ===========
 
-Such Weather
-
-http://dogeweather.com
+Such Weather for X screensaver
 
 License
 ===========
